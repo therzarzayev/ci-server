@@ -6,3 +6,7 @@ import(
 func main()  {
 	fmt.Println("hellp")
 }
+
+func adder()  {
+	fmt.Println("added")
+}
