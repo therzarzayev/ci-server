@@ -1,12 +1,13 @@
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Scanner;
 
 public class Encrypter {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        String encryptedText = encryptWithSHA256("SuperUser");
+        System.out.print("Enter the text to encrypt: ");
+        String text = scanner.nextLine();
+
+        String encryptedText = encryptWithSHA256(text);
 
         System.out.println("Encrypted Text with SHA-256: " + encryptedText);
     }
